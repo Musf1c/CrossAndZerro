@@ -43,7 +43,7 @@ public class Main {
             try {
                 num = Integer.parseInt(reader.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Число, только число!");
+                System.out.println("Можно только число!");
                 continue;
             }
 
