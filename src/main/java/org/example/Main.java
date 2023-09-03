@@ -51,8 +51,9 @@ public class Main {
 
                 switch (num) {
                     case 1:
-                        if (table[0][0] != 'x' && table[0][0] != '0') {
+                        if (table[0][0] != 'x' && table[0][0] != 'o') {
                             table[0][0] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -60,17 +61,19 @@ public class Main {
                             break;
                         }
                     case 2:
-                        if (table[0][1] != 'x' && table[0][1] != '0') {
+                        if (table[0][1] != 'x' && table[0][1] != 'o') {
                             table[0][1] = crossOrZero;
-                            switcher++;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
+                            switcher++;
                             break;
                         }
                     case 3:
-                        if (table[0][2] != 'x' && table[0][2] != '0') {
+                        if (table[0][2] != 'x' && table[0][2] != 'o') {
                             table[0][2] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -78,8 +81,9 @@ public class Main {
                             break;
                         }
                     case 4:
-                        if (table[1][0] != 'x' && table[1][0] != '0') {
+                        if (table[1][0] != 'x' && table[1][0] != 'o') {
                             table[1][0] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -87,8 +91,9 @@ public class Main {
                             break;
                         }
                     case 5:
-                        if (table[1][1] != 'x' && table[1][1] != '0') {
+                        if (table[1][1] != 'x' && table[1][1] != 'o') {
                             table[1][1] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -96,8 +101,9 @@ public class Main {
                             break;
                         }
                     case 6:
-                        if (table[1][2] != 'x' && table[1][2] != '0') {
+                        if (table[1][2] != 'x' && table[1][2] != 'o') {
                             table[1][2] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -105,8 +111,9 @@ public class Main {
                             break;
                         }
                     case 7:
-                        if (table[2][0] != 'x' && table[2][0] != '0') {
+                        if (table[2][0] != 'x' && table[2][0] != 'o') {
                             table[2][0] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -114,8 +121,9 @@ public class Main {
                             break;
                         }
                     case 8:
-                        if (table[2][1] != 'x' && table[2][1] != '0') {
+                        if (table[2][1] != 'x' && table[2][1] != 'o') {
                             table[2][1] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -123,8 +131,9 @@ public class Main {
                             break;
                         }
                     case 9:
-                        if (table[2][2] != 'x' && table[2][2] != '0') {
+                        if (table[2][2] != 'x' && table[2][2] != 'o') {
                             table[2][2] = crossOrZero;
+                            lastNumber++;
                             break;
                         } else {
                             System.out.println("эта клетка занята!");
@@ -159,7 +168,6 @@ public class Main {
                     break;
                 }
             }
-            lastNumber++;
             if (lastNumber == 9) {
                 System.out.println("Ничья");
                 break;
